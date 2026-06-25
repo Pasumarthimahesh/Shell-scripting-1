@@ -1,7 +1,6 @@
 #!/bin/bash
 
-###special vars##
-
+###special variables##
 echo "All Variables passed to script: $@"
 echo "Number of variables passed: $#"
 echo "First Variable: $1"
@@ -16,3 +15,4 @@ wait $!
 echo "line number :$LINENO"
 echo "Script executed in $SECONDS seconds"
 echo "Random number : $RANDOM"
+echo "Exit code of previous command :$?"
