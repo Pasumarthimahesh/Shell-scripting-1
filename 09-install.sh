@@ -12,7 +12,7 @@
  # echo " i am continuing.."
 
  echo "Installing Mysql"
- dnf install mysqlnhbfn -y
+ dnf install mysql -y
 
 if [ $? -ne 0 ]; then 
 echo "Installing MYSQL is ...Failed"
