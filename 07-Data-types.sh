@@ -10,6 +10,6 @@ echo "sum is : $SUM"
 # Array
 MOVIES=("RRR" "Varanasi" "Pushpa") #index always startd from 0
 echo " Movies are : ${MOVIES[@]}"
-echo "First movie is : ${}"MOVIES[0]}"
-echo "First movie is : ${}"MOVIES[1]}"
-echo "First movie is : ${}"MOVIES[2]}"
+echo "First movie is : ${MOVIES[0]}"
+echo "First movie is : ${MOVIES[1]}"
+echo "First movie is : ${MOVIES[2]}"
