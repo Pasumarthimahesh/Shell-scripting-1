@@ -11,11 +11,17 @@ fi
 
 # echo  "i am continuing....."
 
-echo "installing MYSQL"
-dnf install mysql -y
-if [ $? -ne 0 ]; then
-echo "Installing MYSQL .......failed" 
-exit 1 
+dnf list installed mysql
+
+if  [ $? -eq 0 ]; then
+echo " mysql is already installed ...SKIPPING"
 else
-echo "Installing MYSQL is ...SUCESS"
+   echo "installing MYSQL"
+     dnf install mysql -y
+     if [ $? -ne 0 ]; then
+     echo "Installing MYSQL .......failed" 
+    exit 1 
+     else
+     echo "Installing MYSQL is ...SUCESS"
+     fi
 fi
