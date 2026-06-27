@@ -9,4 +9,8 @@ echo "Please run this script with root access"
 exit 1
 fi
 
-echo  "i am continuing....."
+# echo  "i am continuing....."
+echo "installing MYSQL"
+dnf install mysqlserver  -y
+echo "i am continuning..."
+echo "I am still continuning.."
