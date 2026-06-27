@@ -12,6 +12,6 @@ fi
 # echo  "i am continuing....."
 
 echo "installing MYSQL"
-dnf install mysqlserver  -y
+dnf install mysqlhevfg  -y
 echo "i am continuning..."
 echo "I am still continuning.."
