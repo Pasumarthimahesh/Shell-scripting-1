@@ -8,8 +8,6 @@ if [ $USERID -ne 0 ]; then
 echo "Please run this script with root access"
 exit 1
 fi
-
-
 #first arg - what are you trying to install
 #second arg ->exit code
 
@@ -21,13 +19,9 @@ VALIDATE(){
         else
             echo "Installing $1 is ...SUCESS"
         fi
-
-
 }
 
-
 # echo  "i am continuing....."
-
 dnf list installed mysql
 
 if  [ $? -eq 0 ]; then
@@ -40,7 +34,7 @@ fi
 
 # echo  "i am continuing....."
 
-dnf list installed nginx
+dnf list installed nginx -y
 if  [ $? -eq 0 ]; then
 echo " nginx is already installed ...SKIPPING"
 else
