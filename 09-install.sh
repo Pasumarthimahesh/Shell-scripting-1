@@ -10,6 +10,7 @@ exit 1
 fi
 
 # echo  "i am continuing....."
+
 echo "installing MYSQL"
 dnf install mysqlserver  -y
 echo "i am continuning..."
